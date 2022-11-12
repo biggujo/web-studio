@@ -1,0 +1,27 @@
+:root {
+  /* Colors */
+  --primary-color: #212121;
+  --secondary-color: #757575;
+  --secondary-sub-color: #ffffff99;
+  --accent-primary-color: #2196f3;
+
+  /* Colors for background */
+  --primary-background-color: #ffffff;
+  --secondary-background-color: #2f303a;
+
+  /* Additional colors */
+  --primary-white-color: #ffffff;
+  --primary-black-color: #000000;
+
+  /* Fonts */
+  --logo-text-font: "Raleway", sans-serif;
+
+  /* Flex */
+  --primary-gap: 30px;
+
+  /* SVG */
+  --primary-icon-color: #afb1b8;
+
+  /* Animations */
+  --default-cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
+}

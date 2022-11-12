@@ -1,0 +1,16 @@
+// Utils
+@import "./utils/main";
+
+// Base
+@import "./base/main";
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+// Components
+@import "./components/main";
+
+// Layout
+@import "./layout/main";

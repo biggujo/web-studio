@@ -1,0 +1,150 @@
+.footer {
+  padding-block: 60px;
+  background-color: var(--secondary-background-color);
+}
+
+.footer-container {
+  display: flex;
+}
+
+.footer-logo {
+  display: inline-block;
+  padding-bottom: 20px;
+}
+
+.footer-text {
+  display: inline-block;
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.footer-direction {
+  margin-bottom: 9px;
+
+  color: var(--primary-white-color);
+}
+
+.footer-item {
+  margin-bottom: 9px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.footer-item-link {
+  transition: color 250ms var(--default-cubic-bezier);
+
+  color: var(--secondary-sub-color);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-primary-color);
+  }
+
+  &:active {
+    color: var(--secondary-sub-color);
+  }
+}
+
+.footer-address {
+  flex-grow: 1;
+}
+
+.footer-social-links {
+  flex-grow: 1;
+  margin-top: 12px;
+}
+
+.footer-social-text {
+  padding-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+/* .footer-social-item {
+} */
+
+.footer-social-list {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+
+  transition: background-color 250ms var(--default-cubic-bezier);
+
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-primary-color);
+  }
+
+  &:active {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+.footer-social-icon {
+  fill: currentColor;
+}
+
+.footer-form-subscription {
+  width: 50%;
+  margin-top: 12px;
+}
+
+/* .footer-form-label {
+} */
+
+.footer-form-text {
+  display: block;
+  padding-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: var(--primary-white-color);
+}
+
+.footer-form-input {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  padding-left: 16px;
+
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  color: rgba(255, 255, 255, 0.6);
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.footer-form-icon {
+  fill: currentColor;
+}
