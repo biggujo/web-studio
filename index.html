@@ -10,63 +10,94 @@
   <body>
     <!-- Шапка сайту -->
     <header class="header">
-      <div class="container container--df container--ai-center">
-        <a class="logo header__logo link" href="./index.html">
-          <span class="logo__part logo__part--accent">Web</span
-          ><span class="logo__part logo__part--black">Studio</span>
-        </a>
+      <div class="container">
+        <div class="header__content">
+          <a class="logo header__logo link" href="./index.html">
+            <span class="logo__part logo__part--accent">Web</span
+            ><span class="logo__part logo__part--black">Studio</span>
+          </a>
 
-        <nav class="nav">
-          <ul class="nav-list">
-            <li class="nav-list__item">
-              <a
-                class="nav-list__link nav-list__link--current link"
-                href="./index.html"
-              >
-                Студія
-              </a>
-            </li>
-            <li class="nav-list__item">
-              <a class="nav-list__link link" href="./portfolio.html">
-                Портфоліо
-              </a>
-            </li>
-            <li class="nav-list__item">
-              <a class="nav-list__link link" href="">Контакти</a>
-            </li>
-          </ul>
-        </nav>
+          <button
+            class="header__btn-menu btn-menu btn-menu--center--inner"
+            type="button"
+          >
+            <svg class="btn-menu__icon" width="40" height="40">
+              <use href="./images/icons.svg#icon-menu-burger"></use>
+            </svg>
+          </button>
 
-        <ul class="addr-list addr-list--right">
-          <li class="addr-list__item">
-            <a
-              class="addr-list__link addr-list__link--gray link"
-              href="mailto:info@devstudio.com"
+          <div class="mobile-menu">
+            <button
+              class="mobile-menu__btn btn-menu btn-menu--center--inner"
+              type="button"
             >
-              <svg class="addr-list__icon" width="16" height="12">
-                <use href="images/icons.svg#icon-mail"></use>
+              <svg class="btn-menu__icon" width="40" height="40">
+                <use href="./images/icons.svg#icon-menu-close"></use>
               </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="addr-list__item">
-            <a
-              class="addr-list__link addr-list__link--gray link"
-              href="tel:+380961111111"
-            >
-              <svg class="addr-list__icon" width="10" height="16">
-                <use href="images/icons.svg#icon-phone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
+            </button>
+            <div class="mobile-menu__first-part">
+              <nav class="nav">
+                <ul class="nav-list">
+                  <li class="nav-list__item">
+                    <a
+                      class="nav-list__link nav-list__link--current link"
+                      href="./index.html"
+                    >
+                      Студія
+                    </a>
+                  </li>
+                  <li class="nav-list__item">
+                    <a class="nav-list__link link" href="./portfolio.html">
+                      Портфоліо
+                    </a>
+                  </li>
+                  <li class="nav-list__item">
+                    <a class="nav-list__link link" href="">Контакти</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="mobile-menu__last-part">
+              <ul class="addr-list addr-list--right">
+                <li class="addr-list__item">
+                  <a
+                    class="addr-list__link addr-list__link--gray link"
+                    href="mailto:info@devstudio.com"
+                  >
+                    <svg class="addr-list__icon" width="16" height="12">
+                      <use href="images/icons.svg#icon-mail"></use>
+                    </svg>
+                    info@devstudio.com
+                  </a>
+                </li>
+                <li class="addr-list__item">
+                  <a
+                    class="addr-list__link addr-list__link--gray link"
+                    href="tel:+380961111111"
+                  >
+                    <svg class="addr-list__icon" width="10" height="16">
+                      <use href="images/icons.svg#icon-phone"></use>
+                    </svg>
+                    +38 096 111 11 11
+                  </a>
+                </li>
+              </ul>
+              <ul class="mobile-menu__soc-list">
+                <li class="mobile-menu__soc-item">Instagram</li>
+                <li class="mobile-menu__soc-item">Twitter</li>
+                <li class="mobile-menu__soc-item">Facebook</li>
+                <li class="mobile-menu__soc-item">LinkedIn</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
 
     <!-- Головний вміст -->
-    <main class="main">
-      <!-- Герой -->
+    <!-- <main class="main">
+      <!~~ Герой ~~>
       <section class="section hero">
         <div class="container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
@@ -80,7 +111,7 @@
         </div>
       </section>
 
-      <!-- Ключові особливості компанії -->
+      <!~~ Ключові особливості компанії ~~>
       <section class="section features">
         <div class="container">
           <h2 class="visually-hidden">Ключові особливості компанії</h2>
@@ -139,7 +170,7 @@
         </div>
       </section>
 
-      <!-- Чим ми займаємося -->
+      <!~~ Чим ми займаємося ~~>
       <section class="section ourworks">
         <div class="container">
           <h2 class="section__title">Чим ми займаємося</h2>
@@ -186,7 +217,7 @@
         </div>
       </section>
 
-      <!-- Наша команда -->
+      <!~~ Наша команда ~~>
       <section class="section team">
         <div class="container">
           <h2 class="section__title">Наша команда</h2>
@@ -366,7 +397,7 @@
         </div>
       </section>
 
-      <!-- Our clients -->
+      <!~~ Our clients ~~>
       <section class="section clients">
         <div class="container">
           <h2 class="section-title">Постійні клієнти</h2>
@@ -416,10 +447,10 @@
           </ul>
         </div>
       </section>
-    </main>
+    </main> -->
 
     <!-- Підвал -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer-container">
         <div class="footer-address">
           <a class="logo footer-logo text-accent link" href="./index.html">
@@ -509,7 +540,7 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <!-- <div class="clients-backdrop is-hidden" data-modal> -->
     <div class="clients-backdrop is-hidden" data-modal>

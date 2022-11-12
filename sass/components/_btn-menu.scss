@@ -1,0 +1,22 @@
+.btn-menu {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  margin: 0;
+
+  color: var(--primary-color);
+  background: none;
+  border: none;
+
+  cursor: pointer;
+
+  &--center--inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.btn-menu__icon {
+  fill: currentColor;
+}

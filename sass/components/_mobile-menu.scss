@@ -1,0 +1,62 @@
+.mobile-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  padding-block: 48px;
+  padding-inline: 40px;
+
+  background-color: #ffffff;
+
+  outline: 1px solid tomato;
+
+  @media screen and (max-width: 319px) {
+    width: 320px;
+  }
+
+  @media screen and (min-width: 320px) {
+    width: 100%;
+  }
+}
+
+.mobile-menu__btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+// Blocks to separate first part from the last one
+.mobile-menu__first-part {
+  margin-bottom: 60px;
+}
+
+.mobile-menu__last-part {
+}
+
+.mobile-menu__soc-list {
+  display: flex;
+  align-items: center;
+}
+.mobile-menu__soc-item {
+  padding-inline: 10px;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-primary-color);
+
+  // Remove padding to print from the start of the line
+  &:first-child {
+    padding-left: 0;
+  }
+
+  // Beautiful vertical line among the items
+  &:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
+}

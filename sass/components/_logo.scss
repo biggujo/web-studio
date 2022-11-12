@@ -1,9 +1,17 @@
 .logo {
   font-family: var(--logo-text-font);
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
+  line-height: 1.17;
   color: var(--accent-primary-color);
+
+  @include media-mobile() {
+    font-size: 24px;
+  }
+
+  @include media-desktop() {
+    font-size: 26px;
+    line-height: 1.2;
+  }
 }
 
 .logo__part {

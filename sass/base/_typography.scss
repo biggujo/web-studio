@@ -1,6 +1,6 @@
 body {
   font-family: "Roboto", sans-serif;
-  letter-spacing: 0.03em;
+  letter-spacing: var(--default-letter-spacing);
 
   color: var(--primary-color);
 }
