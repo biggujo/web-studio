@@ -1,12 +1,22 @@
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-block: 60px;
+
+  @include media-desktop() {
+    padding-block: 94px;
+  }
 }
 
 .section__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
+
+  @include media-desktop() {
+    margin-bottom: 50px;
+
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }

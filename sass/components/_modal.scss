@@ -23,13 +23,22 @@
   left: 50%;
   padding: 40px;
 
-  width: 530px;
-  height: 580px;
+  width: calc(100% - 30px);
+  height: 609px;
 
   transform: translate(-50%, -50%);
 
   background-color: #ffffff;
   border-radius: 4px;
+
+  @include media-mobile {
+    width: 450px;
+  }
+
+  @include media-desktop() {
+    width: 530px;
+    height: 580px;
+  }
 }
 
 .modal-btn-close {
@@ -63,9 +72,13 @@
 
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   color: var(--primary-color);
+
+  @include media-desktop() {
+    line-height: 1.15;
+  }
 }
 
 .modal-form-wrap {
@@ -146,11 +159,16 @@
   }
 
   &::placeholder {
-    font-size: 12px;
-    line-height: 1.17;
+    font-size: 14px;
+    line-height: 1.14;
     letter-spacing: 0.01em;
 
     color: rgba(117, 117, 117, 0.5);
+
+    @include media-desktop() {
+      font-size: 12px;
+      line-height: 1.17;
+    }
   }
 }
 
@@ -198,9 +216,15 @@
 }
 
 .modal-form-agreement {
-  font-size: 14px;
-  line-height: 1.71;
   color: var(--secondary-color);
+
+  font-size: 12px;
+  line-height: 1.17;
+
+  @include media-desktop() {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal-form-agreement a {

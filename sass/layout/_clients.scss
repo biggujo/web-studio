@@ -8,7 +8,15 @@
 }
 
 .clients-item {
-  width: calc((100% - 30px * 5) / 6);
+  @include calc-width(var(--primary-gap), 2);
+
+  @include media-tablet() {
+    @include calc-width(var(--primary-gap), 3);
+  }
+
+  @include media-desktop() {
+    @include calc-width(var(--primary-gap), 6);
+  }
 }
 
 .clients-item-link {

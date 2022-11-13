@@ -1,7 +1,6 @@
 .btn {
   min-width: 200px;
   height: 50px;
-  padding-inline: 32px;
   padding-block: 10px;
 
   font-family: inherit;
@@ -21,6 +20,10 @@
 
   cursor: pointer;
 
+  @include media-desktop() {
+    padding-inline: 16px;
+  }
+
   &--db {
     display: block;
   }
@@ -38,8 +41,12 @@
     align-items: center;
   }
 
-  &--gap10 {
-    gap: 10px;
+  &--gap {
+    gap: 12px;
+
+    @include media-desktop() {
+      gap: 10px;
+    }
   }
 
   &--margin-inline-auto {

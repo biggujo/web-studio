@@ -1,6 +1,16 @@
 body {
   // TODO: Change to overflow-y: hidden
-  overflow: hidden;
+  // overflow: hidden;
+
+  &.no-scroll {
+    overflow: hidden;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .link {

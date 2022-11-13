@@ -3,7 +3,7 @@ $tabletBreakpoint: 768px;
 $desktopBreakpoint: 1200px;
 
 @mixin media-mobile-smaller() {
-  @media screen and (min-width: $mobileBreakpoint) {
+  @media screen and (max-width: $mobileBreakpoint) {
     @content;
   }
 }
@@ -36,4 +36,8 @@ $desktopBreakpoint: 1200px;
   @media screen and (min-width: $desktopBreakpoint) {
     @content;
   }
+}
+
+@mixin calc-width($gap, $amount) {
+  width: calc((100% - #{$gap} * (#{$amount} - 1)) / #{$amount});
 }
