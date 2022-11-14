@@ -38,7 +38,7 @@
   color: var(--primary-white-color);
 
   @include media-desktop() {
-    width: 696px;
+    max-width: 696px;
 
     font-size: 44px;
     line-height: 1.36;
