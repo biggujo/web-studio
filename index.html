@@ -235,39 +235,80 @@
           <ul class="ourworks__list">
             <li class="ourworks-list__item">
               <div class="ourworks__wrap">
-                <img
-                  class="ourworks__img"
-                  src="./images/index/computer1.jpg"
-                  alt="Планшетний ПК з бездротовою клавіатурою, на якому друкують текст"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/index/computer/computer1.webp    1x,
+                      ./images/index/computer/computer1@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/index/computer/computer1.jpg    1x,
+                      ./images/index/computer/computer1@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                  />
+                  <img
+                    class="ourworks__img"
+                    src="./images/index/computer/computer1.jpg"
+                    alt="Планшетний ПК з бездротовою клавіатурою, на якому друкують текст"
+                    width="370"
+                  />
+                </picture>
                 <p class="ourworks__text">Десктопні додатки</p>
               </div>
             </li>
 
             <li class="ourworks-list__item">
               <div class="ourworks__wrap">
-                <img
-                  class="ourworks__img"
-                  src="./images/index/computer2.jpg"
-                  alt="Смартфон та ноутбук, на яких моделюють інтерфейс користувача"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      ./images/index/computer/computer2.webp    1x,
+                      ./images/index/computer/computer2@2x.webp 2x
+                    "
+                  />
+                  <img
+                    class="ourworks__img"
+                    srcset="
+                      ./images/index/computer/computer2.jpg    1x,
+                      ./images/index/computer/computer2@2x.jpg 2x
+                    "
+                    src="./images/index/computer/computer2.jpg"
+                    alt="Планшетний ПК, на якому відкрито вікно вибору палітри кольорів"
+                    width="370"
+                  />
+                </picture>
+
                 <p class="ourworks__text">Мобільні додатки</p>
               </div>
             </li>
 
             <li class="ourworks-list__item">
               <div class="ourworks__wrap">
-                <img
-                  class="ourworks__img"
-                  src="./images/index/computer3.jpg"
-                  alt="Планшетний ПК, на якому відкрито вікно вибору палітри кольорів"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      ./images/index/computer/computer3.webp    1x,
+                      ./images/index/computer/computer3@2x.webp 2x
+                    "
+                  />
+                  <img
+                    class="ourworks__img"
+                    srcset="
+                      ./images/index/computer/computer3.jpg    1x,
+                      ./images/index/computer/computer3@2x.jpg 2x
+                    "
+                    src="./images/index/computer/computer3.jpg"
+                    alt="Планшетний ПК, на якому відкрито вікно вибору палітри кольорів"
+                    width="370"
+                  />
+                </picture>
+
                 <p class="ourworks__text">Дизайнерські рішення</p>
               </div>
             </li>
@@ -281,10 +322,60 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-item">
-              <img
-                src="./images/index/person1.jpg"
-                alt="Портрет Ігора Дем'яненка"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/index/person/person1-desktop.webp    1x,
+                    ./images/index/person/person1-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/index/person/person1-tablet.webp    1x,
+                    ./images/index/person/person1-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/index/person/person1-mobile.webp    1x,
+                    ./images/index/person/person1-mobile@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/jpeg"
+                  srcset="
+                    ./images/index/person/person1-desktop.jpg    1x,
+                    ./images/index/person/person1-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  type="image/jpeg"
+                  srcset="
+                    ./images/index/person/person1-tablet.jpg    1x,
+                    ./images/index/person/person1-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  type="image/jpeg"
+                  srcset="
+                    ./images/index/person/person1-mobile.jpg    1x,
+                    ./images/index/person/person1-mobile@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/index/person/person1-desktop.jpg"
+                  alt="Портрет Ігора Дем'яненка"
+                  width="270"
+                />
+              </picture>
+
               <div class="team-content">
                 <h3 class="team-item-title">Ігор Дем'яненко</h3>
                 <p class="team-item-text">Product Designer</p>
@@ -322,10 +413,60 @@
             </li>
 
             <li class="team-item">
-              <img
-                src="./images/index/person2.jpg"
-                alt="Портрет Ольги Рєпіної"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/index/person/person2-desktop.webp    1x,
+                    ./images/index/person/person2-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/index/person/person2-tablet.webp    1x,
+                    ./images/index/person/person2-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/index/person/person2-mobile.webp    1x,
+                    ./images/index/person/person2-mobile@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/jpeg"
+                  srcset="
+                    ./images/index/person/person2-desktop.jpg    1x,
+                    ./images/index/person/person2-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  type="image/jpeg"
+                  srcset="
+                    ./images/index/person/person2-tablet.jpg    1x,
+                    ./images/index/person/person2-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  type="image/jpeg"
+                  srcset="
+                    ./images/index/person/person2-mobile.jpg    1x,
+                    ./images/index/person/person2-mobile@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/index/person/person2.jpg"
+                  alt="Портрет Ольги Рєпіної"
+                  width="270"
+                />
+              </picture>
+
               <div class="team-content">
                 <h3 class="team-item-title">Ольга Рєпіна</h3>
                 <p class="team-item-text">Frontend Developer</p>
@@ -363,10 +504,60 @@
             </li>
 
             <li class="team-item">
-              <img
-                src="./images/index/person3.jpg"
-                alt="Портрет Миколи Тарасова"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/index/person/person3-desktop.webp    1x,
+                    ./images/index/person/person3-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/index/person/person3-tablet.webp    1x,
+                    ./images/index/person/person3-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/index/person/person3-mobile.webp    1x,
+                    ./images/index/person/person3-mobile@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/jpeg"
+                  srcset="
+                    ./images/index/person/person3-desktop.jpg    1x,
+                    ./images/index/person/person3-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  type="image/jpeg"
+                  srcset="
+                    ./images/index/person/person3-tablet.jpg    1x,
+                    ./images/index/person/person3-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  type="image/jpeg"
+                  srcset="
+                    ./images/index/person/person3-mobile.jpg    1x,
+                    ./images/index/person/person3-mobile@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/index/person/person3.jpg"
+                  alt="Портрет Миколи Тарасова"
+                  width="270"
+                />
+              </picture>
+
               <div class="team-content">
                 <h3 class="team-item-title">Микола Тарасов</h3>
                 <p class="team-item-text">Marketing</p>
@@ -404,10 +595,60 @@
             </li>
 
             <li class="team-item">
-              <img
-                src="./images/index/person4.jpg"
-                alt="Портрет Михайла Єрмакова"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/index/person/person4-desktop.webp    1x,
+                    ./images/index/person/person4-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/index/person/person4-tablet.webp    1x,
+                    ./images/index/person/person4-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/index/person/person4-mobile.webp    1x,
+                    ./images/index/person/person4-mobile@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/jpeg"
+                  srcset="
+                    ./images/index/person/person4-desktop.jpg    1x,
+                    ./images/index/person/person4-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  type="image/jpeg"
+                  srcset="
+                    ./images/index/person/person4-tablet.jpg    1x,
+                    ./images/index/person/person4-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  type="image/jpeg"
+                  srcset="
+                    ./images/index/person/person4-mobile.jpg    1x,
+                    ./images/index/person/person4-mobile@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/index/person/person4.jpg"
+                  alt="Портрет Михайла Єрмакова"
+                  width="270"
+                />
+              </picture>
+
               <div class="team-content">
                 <h3 class="team-item-title">Михайло Єрмаков</h3>
                 <p class="team-item-text">UI Designer</p>

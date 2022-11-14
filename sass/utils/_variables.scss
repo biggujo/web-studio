@@ -27,4 +27,10 @@
 
   // Letter spacing
   --default-letter-spacing: 0.03em;
+
+  // Hero gradient
+  --default-hero-gradient: linear-gradient(
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+  );
 }
